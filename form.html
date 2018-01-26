@@ -11,11 +11,13 @@
     <nav class="top-menu">
       <ul class="top-menu__list">
         <li class="top-menu__item">
-          <img class="top-menu__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Лого">
+          <a class="top-menu__link">
+            <img class="top-menu__logo-image" src="source/img/logo-mobile.svg" width="86" height="35" alt="Лого">
+          </a>
           <button class="top-menu__toggle-menu">X</button>
         </li>
         <li class="top-menu__item">
-          <a class="top-menu__link" href="#">Каталог товаров</a>
+          <a class="top-menu__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="top-menu__item">
           <a class="top-menu__link" href="#">Вязание на заказ</a>
@@ -39,46 +41,46 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="form__type">
           <p class="form__type-item">Тип</p>
-          <label class="form__label" aria-label="Аксесуары для интерьера" for="form-radio-accessories">
-            <input id="form-radio-accessories" name="type" type="radio" value="accessories">
+          <label class="form__label" aria-label="Аксесуары для интерьера">
+            <input name="type" type="radio" value="accessories" checked="">
             <span class="indicator"></span>
             Аксесуары для интерьера
           </label>
-          <label class="form__label" aria-label="Детская игрушка" for="form-radio-toys">
-            <input id="form-radio-toys" name="type" type="radio" value="toys">
+          <label class="form__label" aria-label="Детская игрушка">
+            <input name="type" type="radio" value="toys">
             <span class="indicator"></span>
             Детская игрушка
           </label>
         </div>
         <div class="form__color">
           <p class="form__type-item">Цвет</p>
-          <label class="form__label" for="checkbox-white" aria-label="Белый">
-            <input id="checkbox-white" type="checkbox" name="color-white" value="white" checked>
+          <label class="form__label" aria-label="Белый">
+            <input type="checkbox" name="color-white" value="white" checked>
             <span class="indicator"></span>
             Белый
           </label>
-          <label class="form__label" for="checkbox-grey" aria-label="Серый">
-            <input id="checkbox-grey" type="checkbox" name="color-grey" value="grey" checked>
+          <label class="form__label" aria-label="Серый">
+            <input type="checkbox" name="color-grey" value="grey" checked>
             <span class="indicator"></span>
             Серый
           </label>
-          <label class="form__label" for="checkbox-tiffany" aria-label="Тиффани">
-            <input id="checkbox-tiffany" type="checkbox" name="color-tiffany" value="tiffany">
+          <label class="form__label" aria-label="Тиффани">
+            <input type="checkbox" name="color-tiffany" value="tiffany">
             <span class="indicator"></span>
             Тиффани
           </label>
-          <label class="form__label" for="checkbox-black" aria-label="Черный">
-            <input id="checkbox-black" type="checkbox" name="color-black" value="black">
+          <label class="form__label" aria-label="Черный">
+            <input type="checkbox" name="color-black" value="black">
             <span class="indicator"></span>
             Черный
           </label>
-          <label class="form__label" for="checkbox-pink" aria-label="Розовый">
-            <input id="checkbox-pink" type="checkbox" name="color-pink" value="pink">
+          <label class="form__label" aria-label="Розовый">
+            <input type="checkbox" name="color-pink" value="pink">
             <span class="indicator"></span>
             Розовый
           </label>
-          <label class="form__label" for="checkbox-orange" aria-label="Оранжевый">
-            <input id="checkbox-orange" type="checkbox" name="color-orange" value="orange">
+          <label class="form__label" aria-label="Оранжевый">
+            <input type="checkbox" name="color-orange" value="orange">
             <span class="indicator"></span>
             Оранжевый
           </label>
@@ -102,24 +104,36 @@
             <p class="form__type-item">E-mail</p>
             <input id="form__email" type="email" name="usremail" placeholder="Ваш E-mail*">
           </label>
-          <label for="additionally">
+          <label class="form__label">
             <p class="form__type-item">Доп</p>
-            <textarea class="form__additionally" id="additionally" rows="7" cols="30" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__textare" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
           <p class="form__description">*Поля обязательные для заполнения</p>
         </div>
-        <button type="submit">Отправить заказ</button>
+        <button class="form__button" type="submit">Отправить заказ</button>
       </form>
     </section>
     <footer class="main-footer">
       <ul class="main-footer__list">
-        <li class="main-footer__item"><a href="#">Instagramm</a></li>
-        <li class="main-footer__item"><a href="#">Facebook</a></li>
-        <li class="main-footer__item"><a href="#">Twitter</a></li>
+        <li class="main-footer__item">
+          <a class="main-footer__item-link href="#">
+            <img src="source/img/icon-insta.svg" alt="Instagramm">
+          </a>
+          <a class="main-footer__item-link href="#">
+            <img src="source/img/icon-fb.svg" alt="Facebook">
+          </a>
+          <a class="main-footer__item-link href="#">
+            <img src="source/img/icon-twitter.svg" alt="Twitter">
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <p class="main-footer__copyright">
+            <a href="#" class="main-footer__link"><span>Разработано</span>
+              <img class="main-footer__img" src="source/img/htmlacademy.svg" alt="Academy link" width="38" height="38">
+            </a>
+          </p>
+        </li>
       </ul>
-      <p class="main-footer__copyright">
-        <a href="#" class="main-footer__link">Разработано</a>
-      </p>
     </footer>
   </div>
 </body>
