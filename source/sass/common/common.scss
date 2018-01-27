@@ -11,24 +11,25 @@ body {
 }
 input[type="input"],
 input[type="tel"],
-input[type="email"],
-input[type="password"] {
+input[type="email"] {
     height: 38px;
     box-sizing: border-box;
-    color: #999999;
+    color: #d6d6d6;
     border: none;
     border-bottom: 2px solid #000000;
-    //border-radius: 5px;
     vertical-align: middle;
     margin-top: 20px;
     padding-bottom: 10px;
     font-size: 17px;
     line-height: 18;
-    font-weight: normal;
+    font-weight: 400;
     display: block;
     width: 100%;
+    outline: none;
 }
-textarea {
+.form__textare {
+  font-weight: 400;
+  color: #d6d6d6;
   resize: none;
   height: 140px;
   padding: 10px;

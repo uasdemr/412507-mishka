@@ -1,85 +1,79 @@
 .form {
   padding: 0 30px;
-  .form__text {
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: #444444;
-  }
-  .form__type-item {
-    position: relative;
-    font-size: 17px;
-    line-height: 17px;
-    font-weight: bold;
-    color: #63d1bb;
-    text-transform: uppercase;
-    margin: 0;
-    //margin-top: 25px;
-    &:after {
-      content: "";
-      //display: inline-block;
-      width: 75%;
-      height: 1px;
-      //margin-left: 20px;
-      background-color: #63d1bb;
-      position: absolute;
-      top: 8px;
-      right: 0;
-    }
-  }
-  .form__color,
-  .form__personal,
-  .form__textare {
-    margin-top: 30px;
-  }
-  .form__label {
-    padding-left: 60px;
-  }
-  .form__label {
-    display: block;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    color: #000000;
-    margin-top: 25px;
-  }
-  .form__label {
+}
+.form__text {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #444444;
+}
+.form__type-item {
   position: relative;
-  cursor: pointer;
-  //background-color: #000000;
-  }
-  .form__label input[type="checkbox"],
-  .form__label input[type="radio"] {
-    opacity: 0;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  margin: 0;
+  &:after {
+    content: "";
+    width: 75%;
+    height: 1px;
+    background-color: #63d1bb;
     position: absolute;
-    //left: -9999px;
+    top: 8px;
+    right: 0;
   }
-  .form__label input[type="checkbox"] + .indicator,
-  .form__label input[type="radio"] + .indicator {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    border: 2px solid #444444;
-    border-radius: 2px;
-    //margin-right: 5px;
-  }
-  .form__label input[type="radio"] + .indicator {
-    border-radius: 50%;
-    border: 2px solid #444444;
-    //top: 7px;
-    width: 30px;
-    height: 30px;
-  }
-  .form__label input[type="checkbox"] + .indicator {
-    width: 30px;
-    height: 30px;
-  }
-  .form__label input[type="checkbox"]:active + .indicator,
-  .form__label input[type="radio"]:active + .indicator {
-    border-color: #444444;
-  }
-  input[type="checkbox"]:checked + .indicator::before {
+}
+.form__color,
+.form__personal,
+.form__textare {
+  margin-top: 30px;
+}
+.form__label {
+  padding-left: 60px;
+}
+.form__label {
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin-top: 25px;
+}
+.form__label {
+position: relative;
+cursor: pointer;
+}
+.form__label input[type="checkbox"],
+.form__label input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+.form__label input[type="checkbox"] + .indicator,
+.form__label input[type="radio"] + .indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  border: 2px solid #444444;
+  border-radius: 2px;
+}
+.form__label input[type="radio"] + .indicator {
+  border-radius: 50%;
+  border: 2px solid #444444;
+  width: 30px;
+  height: 30px;
+}
+.form__label input[type="checkbox"] + .indicator {
+  width: 30px;
+  height: 30px;
+}
+.form__label input[type="checkbox"]:active + .indicator,
+.form__label input[type="radio"]:active + .indicator {
+  border-color: #444444;
+}
+input[type="checkbox"]:checked + .indicator::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -88,54 +82,54 @@
   height: 18px;
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
-  }
-  /*The checked radio icon*/
-  .form__label input[type="radio"]:checked + .indicator::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    border: 7px solid #62d1ba;
-    background-color: #62d1ba;
-  }
-  input[type="checkbox"]:checked + .indicator {
-    border-color: #000000;
-  }
-  input[type="radio"]:checked + .indicator {
-    border-color: #000000;
-  }
-  input[type="checkbox"]:checked + .indicator::before {
-    transform: rotate(45deg);
-  }
-  .form__personal .form__label {
-    padding-left: 0;
-  }
-  .additionally {
-    display: block;
-    margin-top: 25px;
-  }
-  .form__description {
-    font-size: 14px;
-    line-height: 16px;
-    color: #a8a8a8;
-    margin: 0;
-    margin-top: 20px;
-  }
-  .form__button {
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-    color: #444444;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid #444444;
-    width: 100%;
-    text-align: center;
-    padding: 14px 0;
-    background-color: #fff;
-  }
+}
+/*The checked radio icon*/
+.form__label input[type="radio"]:checked + .indicator::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: 7px solid #62d1ba;
+  background-color: #62d1ba;
+}
+input[type="checkbox"]:checked + .indicator {
+  border-color: #000000;
+}
+input[type="radio"]:checked + .indicator {
+  border-color: #000000;
+}
+input[type="checkbox"]:checked + .indicator::before {
+  transform: rotate(45deg);
+}
+.form__personal .form__label {
+  padding-left: 0;
+}
+.additionally {
+  display: block;
+  margin-top: 25px;
+}
+.form__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: #a8a8a8;
+  margin: 0;
+  margin-top: 20px;
+}
+.form__button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #444444;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  width: 100%;
+  text-align: center;
+  padding: 14px 0;
+  background-color: #ffffff;
+  margin-top: 30px;
 }
