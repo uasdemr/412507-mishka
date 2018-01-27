@@ -2,18 +2,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  .top-menu__item{
-    text-align: center;
-    border-bottom: 1px solid #ececec;
-  }
-  .top-menu__link {
-    //background-color: #777999;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    line-height: 24px;
-    color: #000000;
-    font-weight: bold;
-    padding: 28px 20px;
-  }
+}
+.top-menu__item{
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+}
+.top-menu__link {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  padding: 28px 20px;
 }
