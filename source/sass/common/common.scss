@@ -9,9 +9,7 @@ body {
   height: 1px;
   margin: -1px;
 }
-input[type="input"],
-input[type="tel"],
-input[type="email"] {
+.form__input {
     height: 38px;
     box-sizing: border-box;
     color: #d6d6d6;
