@@ -1,12 +1,14 @@
 .form {
   padding: 0 30px;
 }
+
 .form__text {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.5px;
   color: #444444;
 }
+
 .form__type-item {
   position: relative;
   font-size: 17px;
@@ -25,15 +27,15 @@
     right: 0;
   }
 }
+
 .form__color,
 .form__personal,
 .form__textare {
   margin-top: 30px;
 }
+
 .form__label {
   padding-left: 60px;
-}
-.form__label {
   display: block;
   font-size: 17px;
   line-height: 18px;
@@ -41,16 +43,16 @@
   letter-spacing: -0.5px;
   color: #000000;
   margin-top: 25px;
+  position: relative;
+  cursor: pointer;
 }
-.form__label {
-position: relative;
-cursor: pointer;
-}
+
 .form__label input[type="checkbox"],
 .form__label input[type="radio"] {
   opacity: 0;
   position: absolute;
 }
+
 .form__label input[type="checkbox"] + .indicator,
 .form__label input[type="radio"] + .indicator {
   position: absolute;
@@ -59,20 +61,24 @@ cursor: pointer;
   border: 2px solid #444444;
   border-radius: 2px;
 }
+
 .form__label input[type="radio"] + .indicator {
   border-radius: 50%;
   border: 2px solid #444444;
   width: 30px;
   height: 30px;
 }
+
 .form__label input[type="checkbox"] + .indicator {
   width: 30px;
   height: 30px;
 }
+
 .form__label input[type="checkbox"]:active + .indicator,
 .form__label input[type="radio"]:active + .indicator {
   border-color: #444444;
 }
+
 input[type="checkbox"]:checked + .indicator::before {
   content: "";
   position: absolute;
@@ -83,6 +89,7 @@ input[type="checkbox"]:checked + .indicator::before {
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
 }
+
 /*The checked radio icon*/
 .form__label input[type="radio"]:checked + .indicator::before {
   content: "";
@@ -95,22 +102,56 @@ input[type="checkbox"]:checked + .indicator::before {
   border: 7px solid #62d1ba;
   background-color: #62d1ba;
 }
+
 input[type="checkbox"]:checked + .indicator {
   border-color: #000000;
 }
+
 input[type="radio"]:checked + .indicator {
   border-color: #000000;
 }
+
 input[type="checkbox"]:checked + .indicator::before {
   transform: rotate(45deg);
 }
+
+.form__input {
+  height: 38px;
+  box-sizing: border-box;
+  color: #d6d6d6;
+  border: none;
+  border-bottom: 2px solid #000000;
+  vertical-align: middle;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  line-height: 18;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.form__textare {
+  font-weight: 400;
+  color: #d6d6d6;
+  resize: none;
+  height: 140px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  width: 100%;
+}
+
 .form__personal .form__label {
   padding-left: 0;
 }
+
 .additionally {
   display: block;
   margin-top: 25px;
 }
+
 .form__description {
   font-size: 14px;
   line-height: 16px;
@@ -118,6 +159,7 @@ input[type="checkbox"]:checked + .indicator::before {
   margin: 0;
   margin-top: 20px;
 }
+
 .form__button {
   font-size: 17px;
   line-height: 20px;

@@ -1,6 +1,7 @@
 .contacts {
   padding: 0 30px;
 }
+
 .contacts__title {
   font-size: 25px;
   line-height: 30px;
@@ -8,19 +9,23 @@
   margin: 0;
   margin-top: 30px;
 }
+
 .contacts__table {
   width: 100%;
 }
+
 .contacts__col {
   vertical-align: top;
 }
+
 .contacts__email-wrapper {
   padding-left: 25px;
 }
+
 .contacts__email,
 .contacts__address,
 .contacts__email-wrapper
-  {
+{
   margin: 0;
   font-size: 15px;
   line-height: 30px;
@@ -28,17 +33,21 @@
   font-weight: 500;
   letter-spacing: -1px;
 }
+
 .contacts__email-link {
   color: inherit;
   font-size: 15px;
 }
+
 .map {
   margin-top: 40px;
   text-align: center;
 }
+
 .write-us__wrapper {
   padding: 0 30px;
 }
+
 .write-us {
   margin-top: 30px;
   font-size: 17px;
