@@ -17,7 +17,8 @@
   color: #63d1bb;
   text-transform: uppercase;
   margin: 0;
-  &:after {
+
+  &::after {
     content: "";
     width: 75%;
     height: 1px;
@@ -82,7 +83,7 @@
 input[type="checkbox"]:checked + .indicator::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 12px;
   width: 6px;
   height: 18px;
