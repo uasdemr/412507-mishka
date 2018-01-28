@@ -89,6 +89,7 @@ input[type="checkbox"]:checked + .indicator::before {
   height: 18px;
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  transform: rotate(45deg);
 }
 
 /*The checked radio icon*/
@@ -110,10 +111,6 @@ input[type="checkbox"]:checked + .indicator {
 
 input[type="radio"]:checked + .indicator {
   border-color: #000000;
-}
-
-input[type="checkbox"]:checked + .indicator::before {
-  transform: rotate(45deg);
 }
 
 .form__input {
