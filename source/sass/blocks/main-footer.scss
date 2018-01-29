@@ -48,11 +48,11 @@
 }
 
 @media (min-width: 768px) {
-    .main-footer--size {
+    .main-footer {
       padding: 0 50px;
     }
 
-  .main-footer__list--display {
+  .main-footer__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

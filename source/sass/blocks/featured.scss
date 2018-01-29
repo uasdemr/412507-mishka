@@ -71,7 +71,7 @@
 }
 
 @media (min-width: 768px) {
-  .featured--top {
+  .featured {
     margin-top: 35px;
     padding: 0 50px;
     padding-bottom: 40px;
@@ -79,17 +79,16 @@
     position: relative;
   }
 
-  .featured__title--size {
+  .featured__title {
     margin: 0;
     padding-right: 50px;
     font-size: 43px;
     line-height: 50px;
     letter-spacing: -1.5px;
     box-sizing: border-box;
-
   }
 
-  .featured__span--right {
+  .featured__span {
     display: inline-block;
     width: 70px;
     margin-left: 105px;
@@ -97,13 +96,12 @@
     vertical-align: middle;
   }
 
-  .featured__text--size {
+  .featured__text {
     width: 230px;
   }
 
-  .featured__table--size {
+  .featured__table {
     width: 300px;
-    //float: left;
   }
 
   .featured__basket-image {
@@ -115,13 +113,13 @@
     right: 50px;
   }
 
-  .featured__price--size {
+  .featured__price {
     width: 300px;
     font-size: 20px;
     margin: 40px 0;
   }
 
-  .featured__to-order--size {
+  .featured__to-order {
     width: 300px;
     margin-top: 20px;
   }

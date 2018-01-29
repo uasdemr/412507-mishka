@@ -7,6 +7,22 @@
   border: 1px solid #ececec;
 }
 
+.catalog__image {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__image--hare {
+  background-image: url("../../img/photo-hare-mobile@1x.jpg");
+}
+
+.catalog__item--basket {
+  background-image: url(../../img/photo-bowl-mobile@1x.jpg);
+}
+.catalog__item--big-basket {
+  background-image: url(../../img/photo-toys-mobile@1x.jpg);
+}
+
 .catalog-wrapper {
   padding: 0 28px;
 }
@@ -24,9 +40,9 @@
   margin: 0;
   margin-top: 15px;
   padding-bottom: 30px;
+  width: 93%;
   font-size: 13px;
   line-height: 30px;
-  letter-spacing: -0.5px;
   color: #828282;
   border-bottom: 1px solid #ececec;
 }
@@ -44,10 +60,17 @@
   padding: 0 30px;
 }
 
-.catalog__movie {
+.catalog__movie-wrapper {
   margin-top: 30px;
-  position: relative;
+  //position: relative;
   border: 1px solid #ececec;
+}
+
+.catalog__movie--big-basket {
+  position: relative;
+  width: 260px;
+  height: 150px;
+  background-image: url(../../img/video-mobile@1x.jpg);
 }
 
 .catalog__movie .catalog__movie,
@@ -57,8 +80,8 @@
 
 .catalog__image-play {
   position: absolute;
-  top: 35px;
-  left: 80px;
+  top: 25%;
+  left: 33%;
 }
 
 .catalog__description-wrapper {
@@ -81,7 +104,50 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #444444;
-  width: 70%;
+  width: 100%;
   text-align: center;
   padding: 14px 0;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    margin-top: 40px ;
+    padding: 0 50px;
+  }
+
+  .catalog__item {
+    display: flex;
+  }
+
+  .catalog__image {
+    width: 330px;
+    height: 335px;
+  }
+
+  .catalog__image--hare {
+    background-image: url("../../img/photo-1-tablet.jpg");
+  }
+
+  .catalog__item--basket {
+    background-image: url("../../img/photo-2-tablet.jpg");
+  }
+
+  .catalog__item--big-basket {
+    background-image: url("../../img/photo-3-tablet.jpg");
+  }
+
+  .catalog__price {
+    position: bottom;
+  }
+
+  .catalog__movie--big-basket {
+    width: 668px;
+    min-height: 455px;
+    background-image: url("../../img/video-tablet.jpg");
+  }
+
+  .catalog__image-play {
+    top: 40%;
+    left: 44%;
+  }
 }

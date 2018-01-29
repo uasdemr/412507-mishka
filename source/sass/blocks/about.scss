@@ -105,18 +105,15 @@
 }
 
 @media (min-width: 768px) {
-  .about--bg {
+  .about {
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 450px;
-    background-position: 0 500px;
-  }
-
-  .about--size {
+    background-position: 0 560px;
     padding: 0 50px;
   }
 
-  .about__link--size {
+  .about__link {
     font-size: 20px;
     line-height: 22px;
     font-weight: bold;
@@ -126,71 +123,70 @@
   .about-comments {
     position: relative;
     min-height: 520px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
-  .about__list--display {
+  .about__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
   }
 
-  .about__item--size {
+  .about__item {
     width: 333px;
   }
 
-  .about__text--fz {
+  .about__text {
     font-size: 17px;
     margin-top: 50px;
   }
 
-  .about__item--eco {
+  .about__item--eco-order {
     order: 0;
   }
 
-  .about__item--scandinavian {
+  .about__item--scandinavian-order {
     order: 2;
   }
 
-  .about__item--more-like {
+  .about__item--more-like-order {
     order: 4;
   }
 
-  .about__item--handmade {
+  .about__item--handmade-order {
     order: 1;
   }
 
-  .about__item--local {
+  .about__item--local-order {
     order: 3;
   }
 
-  .about__item--present {
+  .about__item--present-order {
     order: 5;
   }
 
-  .about__title--size {
+  .about__title {
     font-size: 43px;
     line-height: 50px;
     padding-top: 50px;
     display: inline-block;
   }
 
-  .about__td--brn {
+  .about__td {
     border: none;
   }
 
-  .about__name--display {
+  .about__name {
     display: inline-block;
     margin-top: 50px;
   }
 
-  .about__table--position {
-    //display: inline-block;
+  .about__table {
     float: right;
     margin-top: 50px;
   }
 
-  .about__to-write--position {
+  .about__to-write {
     margin-top: 50px;
     float: right;
     width: 150px;
