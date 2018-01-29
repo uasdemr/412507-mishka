@@ -7,3 +7,12 @@
   text-align: center;
   padding: 73px 25px;
 }
+
+@media (min-width: 768px) {
+  .form-header__title {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
