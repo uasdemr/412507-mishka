@@ -3,3 +3,11 @@
   width: $main-width;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .site-wrapper {
+    width: 768px;
+    //padding: 0 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+}

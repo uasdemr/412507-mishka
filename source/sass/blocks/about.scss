@@ -10,8 +10,8 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  letter-spacing: -2px;
   margin: 0;
-  margin-top: 30px;
 }
 
 .about__list {
@@ -23,17 +23,32 @@
   padding: 0;
 }
 
+.about__item {
+  position: relative;
+}
+
 .about__link {
   text-decoration: none;
   color: #000000;
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 60px;
+  padding-top: 70px;
+  padding-bottom: 15px;
+
+}
+
+.about__svg {
+  position: absolute;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #fffccc;
 }
 
 .about__text {
-  margin: 30px 0;
+  margin: 0;
+  margin-top: 30px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -45,6 +60,7 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .about__span {
@@ -86,4 +102,106 @@
   width: 100%;
   text-align: center;
   padding: 14px 0;
+}
+
+@media (min-width: 768px) {
+  .about--bg {
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 450px;
+    background-position: 0 500px;
+  }
+
+  .about--size {
+    padding: 0 50px;
+  }
+
+  .about__link--size {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .about-comments {
+    position: relative;
+    min-height: 520px;
+    margin-top: 80px;
+  }
+
+  .about__list--display {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .about__item--size {
+    width: 333px;
+  }
+
+  .about__text--fz {
+    font-size: 17px;
+    margin-top: 50px;
+  }
+
+  .about__item--eco {
+    order: 0;
+  }
+
+  .about__item--scandinavian {
+    order: 2;
+  }
+
+  .about__item--more-like {
+    order: 4;
+  }
+
+  .about__item--handmade {
+    order: 1;
+  }
+
+  .about__item--local {
+    order: 3;
+  }
+
+  .about__item--present {
+    order: 5;
+  }
+
+  .about__title--size {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 50px;
+    display: inline-block;
+  }
+
+  .about__td--brn {
+    border: none;
+  }
+
+  .about__name--display {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .about__table--position {
+    //display: inline-block;
+    float: right;
+    margin-top: 50px;
+  }
+
+  .about__to-write--position {
+    margin-top: 50px;
+    float: right;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .about__prev-button,
+  .about__next-button {
+    padding: 10px 20px;
+  }
+
 }

@@ -42,3 +42,23 @@
 .main-footer__img {
   vertical-align: middle;
 }
+
+.main-footer__item--display {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    .main-footer--size {
+      padding: 0 50px;
+    }
+
+  .main-footer__list--display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__item--display {
+    display: block;
+  }
+}
