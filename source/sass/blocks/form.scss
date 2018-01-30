@@ -11,10 +11,6 @@
   color: #444444;
 }
 
-/*.form__type {
-  box-sizing: border-box;
-}*/
-
 .form__type-item {
   position: relative;
   font-size: 17px;
@@ -225,7 +221,6 @@ input[type="radio"]:checked + .indicator {
 
     .form__label {
       width: 160px;
-
     }
   }
 
@@ -353,6 +348,7 @@ input[type="radio"]:checked + .indicator {
       margin: 0;
     }
   }
+
   .form__textarea {
     width: 500px;
     margin: 0;

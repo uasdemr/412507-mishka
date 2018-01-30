@@ -19,10 +19,11 @@
 }
 
 .catalog__item--basket {
-  background-image: url(../../img/photo-bowl-mobile@1x.jpg);
+  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
 }
+
 .catalog__item--big-basket {
-  background-image: url(../../img/photo-toys-mobile@1x.jpg);
+  background-image: url("../../img/photo-toys-mobile@1x.jpg");
 }
 
 .catalog-wrapper {
@@ -59,18 +60,17 @@
 
 .catalog__films {
   margin-top: 40px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .catalog__movies {
-  //margin-top: 30px;
   position: relative;
   width: 260px;
   height: 150px;
-  background-image: url(../../img/video-mobile@1x.jpg);
+  background-image: url("../../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -85,7 +85,7 @@
   left: 33%;
   width: 100px;
   height: 76px;
-  background-image: url(../../img/icon-play.svg);
+  background-image: url("../../img/icon-play.svg");
 }
 
 .catalog__to-order {
@@ -102,6 +102,7 @@
   text-align: center;
   padding: 14px 0;
 }
+
 .catalog__film-camera-icon {
   width: 32px;
   height: 22px;
@@ -111,7 +112,7 @@
 
 @media (min-width: 768px) {
   .catalog {
-    margin-top: 40px ;
+    margin-top: 40px;
     padding: 0 50px;
   }
 
@@ -128,6 +129,7 @@
     width: 330px;
     height: 335px;
   }
+
   .catalog__films-description {
     flex-direction: row;
   }

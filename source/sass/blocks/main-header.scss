@@ -62,11 +62,13 @@
   .main-header--display-block {
     display: inline-block;
   }
+
   .main-header__list {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
   }
+
   .main-header__item {
     width: 333px;
   }
@@ -76,7 +78,7 @@
   .main-header {
     background-position: 0 -30px;
     padding: 0 100px;
-    background-image: url(../img/hero-desktop.jpg);
+    background-image: url("../img/hero-desktop.jpg");
   }
 
   .main-header__title {
