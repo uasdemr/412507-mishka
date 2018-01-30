@@ -71,3 +71,39 @@
     width: 333px;
   }
 }
+
+@media (min-width: 1200px) {
+  .main-header {
+    background-position: 0 -30px;
+    padding: 0 100px;
+    background-image: url(../img/hero-desktop.jpg);
+  }
+
+  .main-header__title {
+    padding-top: 120px;
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: -2px;
+  }
+
+  .main-header__list {
+    margin-top: 240px;
+  }
+
+  .main-header__item {
+    width: 550px;
+    background-position: 460px 20px;
+  }
+
+  .main-header__item:nth-child(2) {
+    background-position: 440px 20px;
+  }
+
+  .main-header__link {
+    padding-right: 290px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+}

@@ -25,6 +25,12 @@
   border-bottom: 1px solid #ececec;
 }
 
+.top-menu--sale,
+.top-menu--news,
+.top-menu--delivery {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .top-menu__toggle-menu {
     display: none;
@@ -52,7 +58,7 @@
     padding: 20px;
   }
 
-  .top-menu--order {
+  .top-menu--logo {
     order: -3;
   }
 
@@ -64,7 +70,45 @@
     order: -1;
   }
 
-  .top-menu--display-block {
+  .top-menu--display-block-m {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-menu--logo {
+    order: 2;
+  }
+
+  .top-menu--catalog {
+    order: 0;
+  }
+
+  .top-menu--knitting {
+    order: 1;
+  }
+
+  .top-menu--find {
+    order: 3;
+  }
+
+  .top-menu--basket {
+    order: 4;
+  }
+
+  .top-menu--news {
+    order: 5;
+  }
+
+  .top-menu--sale {
+    order: 6;
+  }
+
+  .top-menu--delivery {
+    order: 7;
+  }
+
+  .top-menu--display-block-l {
     display: block;
   }
 }

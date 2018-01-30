@@ -9,7 +9,7 @@
   <div class="site-wrapper">
     <nav class="top-menu">
       <ul class="top-menu__list">
-        <li class="top-menu__item top-menu--order">
+        <li class="top-menu__item top-menu--logo">
           <a class="top-menu__link">
             <img class="top-menu__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Лого">
           </a>
@@ -28,8 +28,14 @@
         <li class="top-menu__item top-menu--basket">
           <a class="top-menu__link" href="#">Корзина: пока пуста</a>
         </li>
-        <li class="top-menu__item top-menu--display-block">
+        <li class="top-menu__item top-menu--display-block-m top-menu--delivery">
           <a class="top-menu__link top-menu--font" href="#">Бесплатная доставка по России</a>
+        </li>
+        <li class="top-menu__item top-menu--news top-menu--display-block-l">
+          <a class="top-menu__link top-menu--font" href="#">Новые поступления</a>
+        </li>
+        <li class="top-menu__item top-menu--sale top-menu--display-block-l">
+          <a class="top-menu__link top-menu--font" href="#">Распродажа</a>
         </li>
       </ul>
     </nav>
@@ -45,8 +51,9 @@
       </ul>
     </header>
     <section class="featured">
-      <h2 class="featured__title">Вязанные корзинки
-        <span class="featured__span">товар недели</span>
+      <h2 class="featured__title">
+        <span class="featured__span-block">Вязанные корзинки</span>
+        <span class="featured__span featured--order">товар недели</span>
       </h2>
       <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
       <table class="featured__table">
@@ -63,7 +70,7 @@
           <td class="featured__col">15 см</td>
         </tr>
       </table>
-      <img class="featured__basket-image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзиночки">
+      <img class="featured__basket-image" src="img/triple-set-desktop.jpg" width="260" height="315" alt="Вязаные корзиночки">
       <p class="featured__price">Цена: 990 руб.</p>
       <a href="#" class="featured__to-order">Заказать</a>
     </section>
@@ -114,9 +121,10 @@
         <a href="add_message.php" class="about__to-write">Написать</a>
       </article>
     </section>
-    <section class="contacts contacts--size">
-      <h3 class="contacts__title">Контакты
-        <span class="contacts__flag">
+    <section class="contacts">
+      <h3 class="contacts__title">
+        <span>Контакты</span>
+        <span class="contacts__flag contacts__flag--display">
           <img src="img/icon-flag.svg" alt="Флаг">
         </span>
       </h3>
@@ -132,15 +140,15 @@
               </p>
             </td>
           </tr>
-          <tr class="contacts__row contacts__row--size">
+          <tr class="contacts__row">
             <td class="contacts__col">
-              <p class="contacts__address contacts__address--size">адрес:</p>
+              <p class="contacts__address">адрес:</p>
             </td>
             <td class="contacts__col">
-              <p class="contacts__email-wrapper contacts__email-wrapper--display">
-                <span>г. Санкт-Петербург,</span>
-                <span>ул. Большая Конюшеная,</span>
-                <span>д.19/8,офис 101</span>
+              <p class="contacts__address-wrapper">
+                <span class="contacts__span">г. Санкт-Петербург,</span>
+                <span class="contacts__span">ул. Большая Конюшеная,</span>
+                <span class="contacts__span">д.19/8,офис 101</span>
               </p>
             </td>
           </tr>
