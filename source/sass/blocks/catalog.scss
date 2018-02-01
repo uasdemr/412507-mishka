@@ -14,15 +14,15 @@
   height: 195px;
 }
 
-.catalog__image--hare {
+.catalog__hare {
   background-image: url("../../img/photo-hare-mobile@1x.jpg");
 }
 
-.catalog__item--basket {
+.catalog__basket {
   background-image: url("../../img/photo-bowl-mobile@1x.jpg");
 }
 
-.big--basket {
+.catalog__big-basket {
   background-image: url("../../img/photo-toys-mobile@1x.jpg");
 }
 
@@ -134,15 +134,15 @@
     flex-direction: row;
   }
 
-  .catalog__image--hare {
+  .catalog__hare {
     background-image: url("../../img/photo-1-tablet.jpg");
   }
 
-  .catalog__item--basket {
+  .catalog__basket {
     background-image: url("../../img/photo-2-tablet.jpg");
   }
 
-  .big--basket {
+  .catalog__big-basket {
     background-image: url("../../img/photo-3-tablet.jpg");
   }
 
