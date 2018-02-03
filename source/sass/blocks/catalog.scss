@@ -1,10 +1,29 @@
 .catalog {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog__item {
   margin-top: 30px;
   border: 1px solid #ececec;
+}
+
+.catalog__image {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__hare {
+  background-image: url("../../img/photo-hare-mobile@1x.jpg");
+}
+
+.catalog__basket {
+  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
+}
+
+.catalog__big-basket {
+  background-image: url("../../img/photo-toys-mobile@1x.jpg");
 }
 
 .catalog-wrapper {
@@ -13,7 +32,6 @@
 
 .catalog__title {
   margin: 0;
-  margin-top: 30px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -24,9 +42,9 @@
   margin: 0;
   margin-top: 15px;
   padding-bottom: 30px;
+  width: 93%;
   font-size: 13px;
   line-height: 30px;
-  letter-spacing: -0.5px;
   color: #828282;
   border-bottom: 1px solid #ececec;
 }
@@ -40,35 +58,34 @@
   font-weight: bold;
 }
 
-.catalog__title-wrapper {
-  padding: 0 30px;
+.catalog__films {
+  margin-top: 40px;
+  border: 1px solid #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.catalog__movie {
-  margin-top: 30px;
+.catalog__movies {
   position: relative;
-  border: 1px solid #ececec;
+  width: 260px;
+  height: 150px;
+  background-image: url("../../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
-.catalog__movie .catalog__movie,
-.catalog__description-wrapper .catalog__description {
+.catalog__movies,
+.catalog__description {
   border: none;
 }
 
-.catalog__image-play {
+.catalog__movie-play {
   position: absolute;
-  top: 35px;
-  left: 80px;
-}
-
-.catalog__description-wrapper {
-  padding: 0 30px;
-}
-
-.catalog__to-order-wrapper {
-  text-align: center;
-  margin-top: 25px;
-  box-sizing: border-box;
+  top: 25%;
+  left: 33%;
+  width: 100px;
+  height: 76px;
+  background-image: url("../../img/icon-play.svg");
 }
 
 .catalog__to-order {
@@ -81,7 +98,93 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #444444;
-  width: 70%;
+  width: 100%;
   text-align: center;
   padding: 14px 0;
+}
+
+.catalog__film-camera-icon {
+  width: 32px;
+  height: 22px;
+  background-image: url("../../img/icon-video.svg");
+  background-position: 0 -5px;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    margin-top: 40px;
+    padding: 0 50px;
+  }
+
+  .catalog__films {
+    flex-direction: column;
+  }
+
+
+  .catalog__item {
+    display: flex;
+  }
+
+  .catalog__image {
+    width: 330px;
+    height: 335px;
+  }
+
+  .catalog__films-description {
+    flex-direction: row;
+  }
+
+  .catalog__hare {
+    background-image: url("../../img/photo-1-tablet.jpg");
+  }
+
+  .catalog__basket {
+    background-image: url("../../img/photo-2-tablet.jpg");
+  }
+
+  .catalog__big-basket {
+    background-image: url("../../img/photo-3-tablet.jpg");
+  }
+
+  .catalog__price {
+    position: bottom;
+  }
+
+  .catalog__movies {
+    width: 668px;
+    min-height: 455px;
+    background-image: url("../../img/video-tablet.jpg");
+  }
+
+  .catalog__movie-play {
+    top: 40%;
+    left: 44%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+  }
+
+  .catalog__films {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .catalog__films-description {
+    width: 365px;
+  }
+
+  .catalog__movies {
+    width: 680px;
+    min-height: 455px;
+    background-image: url("../../img/video-desktop.jpg");
+  }
 }

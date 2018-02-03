@@ -1,4 +1,4 @@
-.form-header__title {
+.form-title {
   background-color: #f1f1f1;
   font-size: 27px;
   line-height: 30px;
@@ -6,4 +6,13 @@
   letter-spacing: -0.5px;
   text-align: center;
   padding: 73px 25px;
+}
+
+@media (min-width: 768px) {
+  .form-title {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

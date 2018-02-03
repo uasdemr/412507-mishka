@@ -8,18 +8,26 @@
   font-weight: bold;
   margin: 0;
   margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__flag--display {
+  display: none;
 }
 
 .contacts__table {
   width: 100%;
+  margin-top: 20px;
 }
 
 .contacts__col {
   vertical-align: top;
 }
 
-.contacts__email-wrapper {
-  padding-left: 25px;
+.contacts__email {
+  width: 100px;
 }
 
 .contacts__email,
@@ -60,4 +68,127 @@
   width: 100%;
   text-align: center;
   padding: 14px 0;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__flag--display {
+    display: block;
+  }
+
+  .contacts__flag {
+    width: 50px;
+    height: 80px;
+  }
+
+  .contacts__table--mt {
+    margin-top: 50px;
+  }
+
+  .contacts__tbody {
+    display: flex;
+  }
+
+  .contacts__address {
+    width: 100px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+
+  .contacts__address-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contacts__email-wrapper {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+    letter-spacing: 0;
+    width: 230px;
+  }
+
+  .write-us__wrapper--ta {
+    margin-top: 30px;
+  }
+
+  .write-us--size {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    //padding: 0 100px;
+    width: 450px;
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 0;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contacts__tbody {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin-left: 150px;
+  }
+
+  .contacts__email-link {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__email,
+  .contacts__address {
+    width: 70px;
+  }
+
+  .contacts__email {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  .contacts__span {
+    line-height: 40px;
+  }
+
+  .map {
+    width: 525px;
+    height: 460px;
+    float: right;
+    margin-right: 100px;
+  }
+
+  .write-us__wrapper {
+    margin-top: 165px;
+  }
+
+  .write-us {
+    margin-left: 230px;
+  }
 }
