@@ -1,7 +1,8 @@
 .site-title {
   margin: 0;
+  padding: 0 30px;
   box-sizing: border-box;
-  padding-top: 85px;
+  padding-top: 69px;
   padding-bottom: 125px;
   text-align: center;
   font-size: 27px;
@@ -9,17 +10,18 @@
   width: 100%;
   background-color: #fafafa;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: -130px 0;
+  background-position: -130px -20px;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .site-title {
     background-image: url("../img/hero-desktop.jpg");
-    background-position: -190px -50px;
+    background-position: center -50px;
     font-size: 43px;
     line-height: 60px;
     padding-bottom: 370px;
+    padding-top: 80px;
   }
 
   .site-title__text {
@@ -30,6 +32,6 @@
 
 @media (min-width: 1200px) {
   .site-title {
-    background-position: 25px -50px;
+    background-position: center -50px;
   }
 }

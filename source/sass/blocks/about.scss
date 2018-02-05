@@ -1,9 +1,9 @@
 .about {
   padding: 0 30px;
   padding-bottom: 30px;
+  margin-top: 27px;
   border-bottom: 2px solid #f1f1f1;
   color: #000000;
-  margin-top: 30px;
 }
 
 .about__title {
@@ -12,6 +12,7 @@
   font-weight: bold;
   letter-spacing: -2px;
   margin: 0;
+  margin-top: 25px;
 }
 
 .about__list {
@@ -20,11 +21,17 @@
   font-weight: bold;
   list-style-type: none;
   margin: 0;
+  margin-top: 15px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__item {
-  position: relative;
+  min-height: 100px;
+  //position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__link {
@@ -33,16 +40,18 @@
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 70px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 24px;
 }
 
 .about__svg {
-  position: absolute;
-  top: 10px;
+  //position: absolute;
+  //top: 10px;
   width: 40px;
-  height: 40px;
-  background-color: #fffccc;
+  margin-top: 10px;
+  //height: 40px;
+  //background-color: #fffccc;
+  text-align: center;
 }
 
 .about__text {
@@ -59,7 +68,7 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .about__span {
@@ -68,7 +77,7 @@
 }
 
 .about__table {
-  margin-top: 20px;
+  margin-top: 33px;
   list-style-type: none;
   padding-left: 0;
 }
@@ -89,7 +98,7 @@
 }
 
 .about__to-write {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -108,7 +117,7 @@
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 450px;
-    background-position: 0 560px;
+    background-position: 0 640px;
     padding: 0 50px;
   }
 
@@ -122,17 +131,19 @@
   .about-comments {
     position: relative;
     min-height: 520px;
-    margin-top: 60px;
+    margin-top: 65px;
   }
 
   .about__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
   }
 
   .about__item {
     width: 333px;
+    margin-top: 8px;
+    margin-bottom: 18px;
   }
 
   .about__text {
@@ -167,7 +178,7 @@
   .about__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 50px;
+    margin-top: 50px;
     display: inline-block;
   }
 
@@ -177,18 +188,17 @@
 
   .about__name {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   .about__table {
     float: right;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .about__to-write {
     margin-top: 50px;
-    float: right;
-    width: 150px;
+    width: 170px;
     position: absolute;
     top: 0;
     right: 0;

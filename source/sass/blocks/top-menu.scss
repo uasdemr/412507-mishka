@@ -1,17 +1,11 @@
 .top-menu__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 30px;
-}
-
-.top-menu__logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 0;
 }
 
 .top-menu__item {
-  vertical-align: bottom;
+  border-bottom: 1px solid #ececec;
   box-sizing: border-box;
 }
 
@@ -20,15 +14,35 @@
   display: inline-block;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: hsla(0, 0, 0, 1);
   font-weight: bold;
   padding: 28px 20px;
-  padding-left: 60px;
+  padding-left: 75px;
   vertical-align: baseline;
-  box-sizing: border-box;
+  //box-sizing: border-box;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid #ececec;
+
+  &:hover {
+    color: hsla(0, 0, 45%, 1);
+  }
+
+  &:active {
+    color: hsla(0, 0, 75%, 1);
+  }
+}
+
+.top-menu__link-svg {
+  padding-left: 0;
+}
+
+.top-menu__svg {
+  padding: 30px;
+}
+
+.top-menu__link--padding {
+  padding: 20px;
+  padding-left: 115px;
 }
 
 .top-menu__sale--order,
@@ -37,17 +51,93 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .top-menu__toggle-menu {
-    display: none;
-  }
+.top-menu--closed .top-menu__item {
+  display: none;
 
+  &--active {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
   .top-menu__list {
-    padding: 0 50px;
+    //padding: 0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #f9f9f9;
+  }
+
+  .top-menu__logo {
+    width: 370px;
+    border-right: 1px solid #ececec;
+    background-color: #ffffff;
+
+    .top-menu__link {
+      padding: 23px 0;
+      padding-left: 50px;
+    }
+  }
+
+  .top-menu__find {
+    width: 81px;
+    text-align: center;
+    background-color: #ffffff;
+
+    .top-menu__link-svg {
+      padding: 0;
+      line-height: 81px;
+    }
+
+    .top-menu__svg {
+      padding: 0;
+    }
+  }
+
+  .top-menu__basket {
+    width: 315px;
+    border-left: 1px solid #ececec;
+    background-color: #ffffff;
+
+    .top-menu__link-svg {
+      padding: 0;
+      line-height: 81px;
+    }
+  }
+
+  .top-menu__catalog,
+  .top-menu__knitting,
+  .top-menu__delivery {
+    border-bottom: none;
+    margin-left: 50px;
+
+    .top-menu__link {
+      padding: 20px 0;
+      //margin-left: 50px;
+    }
+  }
+
+  .top-menu__catalog {
+    width: 150px;
+
+    .top-menu__link {
+      //padding-left: 50px;
+      //margin-left: 50px;
+    }
+  }
+
+  .top-menu__knitting {
+    width: 190px;
+    margin: 0;
+  }
+
+  .top-menu__delivery {
+    width: 290px;
+  }
+
+  .top-menu--closed .top-menu__item {
+    display: block;
   }
 
   .font--view {
@@ -61,7 +151,11 @@
   }
 
   .top-menu__link {
-    padding: 20px;
+    padding: 23px 20px;
+
+    &--font {
+      font-size: 15px;
+    }
   }
 
   .top-menu__logo--order {
@@ -82,6 +176,12 @@
 }
 
 @media (min-width: 1200px) {
+
+  .top-menu__list {
+    padding: 0 50px;
+    //background-color: #ffffff;
+  }
+
   .top-menu__logo--order {
     order: 2;
   }
@@ -117,5 +217,103 @@
   .top-menu__news--display-block,
   .top-menu__sale--display-block {
     display: block;
+  }
+
+  .top-menu__catalog {
+    width: 230px;
+    border-bottom: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    background-color: #ffffff;
+
+    .top-menu__link {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+    }
+  }
+
+  .top-menu__knitting {
+    width: 205px;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+
+    .top-menu__link {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      padding-left: 35px;
+    }
+  }
+
+  .top-menu__logo {
+    width: 295px;
+    border-bottom: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+
+    .top-menu__link {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      padding-left: 85px;
+    }
+  }
+
+  .top-menu__find {
+    width: 83px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .top-menu__basket {
+    width: 287px;
+    border-bottom: 1px solid #ececec;
+
+    .top-menu__text-basket {
+      letter-spacing: -1px;
+    }
+  }
+
+  .top-menu__delivery {
+    width: 250px;
+
+    .top-menu__link {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .top-menu__news {
+    border: none;
+    width: 230px;
+
+    .top-menu__link {
+      font-size: 15px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+    }
+  }
+
+  .top-menu__sale {
+    width: 584px;
+    border: none;
+
+    .top-menu__link {
+      font-size: 15px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      //padding-left: 50px;
+    }
+  }
+
+  .top-menu__catalog,
+  .top-menu__knitting,
+  .top-menu__delivery {
+    margin-left: 0;
+  }
+
+  .top-menu__link {
+    padding: 23px 20px;
+
+    &--font {
+      font-size: 17px;
+    }
   }
 }

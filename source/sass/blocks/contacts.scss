@@ -3,14 +3,14 @@
 }
 
 .contacts__title {
-  font-size: 25px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   margin: 0;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 55px;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
 }
 
 .contacts__flag--display {
@@ -19,15 +19,15 @@
 
 .contacts__table {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .contacts__col {
-  vertical-align: top;
+  //vertical-align: top;
 }
 
 .contacts__email {
-  width: 100px;
+  width: 80px;
 }
 
 .contacts__email,
@@ -39,6 +39,21 @@
   color: #444444;
   font-weight: 500;
   letter-spacing: -1px;
+}
+
+.contacts__address-wrapper {
+  margin: 0;
+  padding-top: 30px;
+
+  .contacts__span {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 15px;
+  }
+}
+
+.contacts__address {
+  padding-bottom: 60px;
 }
 
 .contacts__email-link {
@@ -72,16 +87,18 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding: 0 50px;
+    padding: 0 55px;
   }
 
   .contacts__title {
     font-size: 43px;
-    line-height: 50px;
+    line-height: 60px;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .contacts__flag--display {
@@ -89,12 +106,12 @@
   }
 
   .contacts__flag {
-    width: 50px;
+    width: 45px;
     height: 80px;
   }
 
   .contacts__table--mt {
-    margin-top: 50px;
+    margin-top: 33px;
   }
 
   .contacts__tbody {
@@ -113,6 +130,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0;
   }
 
   .contacts__email-wrapper {
@@ -123,8 +141,8 @@
     width: 230px;
   }
 
-  .write-us__wrapper--ta {
-    margin-top: 30px;
+  .write-us__wrapper--tablet {
+    margin-top: 63px;
   }
 
   .write-us--size {
