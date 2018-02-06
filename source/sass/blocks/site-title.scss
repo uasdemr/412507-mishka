@@ -20,7 +20,7 @@
     background-position: center -50px;
     font-size: 43px;
     line-height: 60px;
-    padding-bottom: 370px;
+    padding-bottom: 365px;
     padding-top: 80px;
   }
 
@@ -30,8 +30,16 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .site-title {
     background-position: center -50px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 90px;
+    letter-spacing: -1px;
+
+    .site-title__text {
+      width: 700px;
+    }
   }
 }

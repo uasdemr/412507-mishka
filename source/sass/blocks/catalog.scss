@@ -7,6 +7,8 @@
 .catalog__item {
   margin-top: 30px;
   border: 1px solid #ececec;
+  padding-bottom: 28px;
+  //margin-bottom: 30px;
 }
 
 .catalog__image {
@@ -27,6 +29,7 @@
 }
 
 .catalog-wrapper {
+  margin-top: 26px;
   padding: 0 28px;
 }
 
@@ -40,7 +43,7 @@
 
 .catalog__description {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 5px;
   padding-bottom: 30px;
   width: 93%;
   font-size: 13px;
@@ -49,10 +52,18 @@
   border-bottom: 1px solid #ececec;
 }
 
+.catalog__price-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .catalog__price {
   margin: 0;
-  margin-top: 30px;
-  padding-bottom: 30px;
+  //margin-top: 10px;
+  //padding-bottom: 30px;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
@@ -63,10 +74,13 @@
   border: 1px solid #000000;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .catalog__movies {
+  margin-top: 20px;
   position: relative;
   width: 260px;
   height: 150px;
@@ -81,15 +95,24 @@
 
 .catalog__movie-play {
   position: absolute;
-  top: 25%;
-  left: 33%;
+  top: 19%;
+  left: 30%;
   width: 100px;
   height: 76px;
   background-image: url("../../img/icon-play.svg");
 }
 
+.catalog__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 20px 30px;
+  padding-bottom: 25px;
+  letter-spacing: 0.6px;
+}
+
 .catalog__to-order {
-  margin: 30px 0;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -98,21 +121,31 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #444444;
-  width: 100%;
+  width: 190px;
   text-align: center;
   padding: 14px 0;
 }
 
-.catalog__film-camera-icon {
-  width: 32px;
-  height: 22px;
-  background-image: url("../../img/icon-video.svg");
-  background-position: 0 -5px;
+.catalog__film-svg-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 35px;
+
+  &--order {
+    order: -1;
+  }
+
+  .catalog__title {
+    width: 130px;
+  }
 }
 
 @media (min-width: 768px) {
   .catalog {
-    margin-top: 40px;
+    margin-top: 51px;
     padding: 0 50px;
   }
 

@@ -210,19 +210,35 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .about {
     padding: 0 100px;
-    background-position: 100px 560px;
+    background-position: 100px 655px;
+    margin-top: 32px;
+  }
+
+  .about__list {
+    margin-left: 180px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 160px;
+    margin-left: 175px;
   }
 
-  .about__list {
-    margin-left: 160px;
+  .about__text {
+    width: 780px;
+    margin-left: 175px;
   }
+
+  .about__name {
+    margin-top: 35px;
+    margin-left: 175px;
+  }
+
+  .about__table {
+    margin-top: 44px;
+  }
+
 }

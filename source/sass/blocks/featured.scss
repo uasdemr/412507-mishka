@@ -134,10 +134,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .featured {
+    margin-top: 67px;
     padding: 0 100px;
-    padding-bottom: 200px;
+    padding-bottom: 70px;
   }
 
   .featured__title {
@@ -155,7 +156,7 @@
   }
 
   .featured__span-block {
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .featured--order {
@@ -167,27 +168,30 @@
   }
 
   .featured__text {
-    margin-left: 160px;
+    margin-left: 175px;
   }
 
   .featured__table {
-    margin-left: 160px;
+    margin-left: 175px;
+    margin-top: 45px;
   }
 
   .featured__price {
     width: 600px;
-    margin-top: 35px;
+    margin-top: 105px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .featured__to-order {
-    margin-left: 160px;
+    margin-left: 175px;
+    margin-top: 15px;
   }
 
   .featured__basket-image {
     width: 520px;
     height: 635px;
-    top: 40px;
+    top: 18px;
     right: 100px;
   }
 }

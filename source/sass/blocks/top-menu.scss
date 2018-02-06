@@ -20,7 +20,7 @@
   padding-left: 75px;
   vertical-align: baseline;
   //box-sizing: border-box;
-  width: 100%;
+  //width: 100%;
   position: relative;
 
   &:hover {
@@ -100,6 +100,15 @@
     border-left: 1px solid #ececec;
     background-color: #ffffff;
 
+    .top-menu__svg {
+      padding: 0;
+      padding-left: 30px;
+    }
+
+    .top-menu__text-basket {
+      margin-left: 30px;
+    }
+
     .top-menu__link-svg {
       padding: 0;
       line-height: 81px;
@@ -173,9 +182,14 @@
   .top-menu__delivery--display-block {
     display: block;
   }
+
+  .top-menu--closed .top-menu__news--display,
+  .top-menu--closed .top-menu__sale--display {
+    display: none;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
 
   .top-menu__list {
     padding: 0 50px;
@@ -214,13 +228,13 @@
     order: 7;
   }
 
-  .top-menu__news--display-block,
-  .top-menu__sale--display-block {
+  .top-menu__news--display,
+  .top-menu__sale--display {
     display: block;
   }
 
   .top-menu__catalog {
-    width: 230px;
+    width: 235px;
     border-bottom: 1px solid #ececec;
     border-right: 1px solid #ececec;
     background-color: #ffffff;
@@ -233,7 +247,7 @@
   }
 
   .top-menu__knitting {
-    width: 205px;
+    width: 220px;
     border-bottom: 1px solid #ececec;
     background-color: #ffffff;
 
@@ -245,7 +259,7 @@
   }
 
   .top-menu__logo {
-    width: 295px;
+    width: 300px;
     border-bottom: 1px solid #ececec;
     border-right: 1px solid #ececec;
 
@@ -257,12 +271,12 @@
   }
 
   .top-menu__find {
-    width: 83px;
+    width: 80px;
     border-bottom: 1px solid #ececec;
   }
 
   .top-menu__basket {
-    width: 287px;
+    width: 315px;
     border-bottom: 1px solid #ececec;
 
     .top-menu__text-basket {
@@ -285,7 +299,7 @@
 
     .top-menu__link {
       font-size: 15px;
-      padding-top: 30px;
+      padding-top: 19px;
       padding-bottom: 15px;
       padding-left: 50px;
     }
@@ -297,7 +311,7 @@
 
     .top-menu__link {
       font-size: 15px;
-      padding-top: 30px;
+      padding-top: 19px;
       padding-bottom: 15px;
       //padding-left: 50px;
     }
