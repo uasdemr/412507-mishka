@@ -130,7 +130,6 @@ input[type="radio"]:checked + .indicator {
 
 .form__label--radio {
   min-height: 55px;
-  display: block;
   display: flex;
   align-items: center;
 }
@@ -212,7 +211,6 @@ input[type="radio"]:checked + .indicator {
 .form__item-wrapper--send {
   display: flex;
   flex-direction: column-reverse;
-
 }
 
 .form__description {
@@ -220,7 +218,7 @@ input[type="radio"]:checked + .indicator {
   margin-top: 11px;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: -0.3px
+  letter-spacing: -0.3px;
 }
 
 @media (min-width: 768px) {

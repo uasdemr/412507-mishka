@@ -136,9 +136,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 350px;
-  //padding: 12px 35px;
   align-items: center;
   margin-left: 33px;
 
@@ -170,6 +168,7 @@
   .catalog__price {
     font-size: 17px;
     line-height: 24px;
+    position: bottom;
   }
 
   .catalog__price-wrapper {
@@ -226,10 +225,6 @@
 
   .catalog__big-basket {
     background-image: url("../../img/photo-3-tablet.jpg");
-  }
-
-  .catalog__price {
-    position: bottom;
   }
 
   .catalog__movies {
@@ -295,6 +290,7 @@
 
   .catalog__films {
     margin-top: 55px;
+    display: block;
   }
 
   .catalog__price-wrapper {
@@ -315,10 +311,6 @@
     margin-left: 83px;
     margin-top: 18px;
     width: 225px;
-  }
-
-  .catalog__films {
-    display: block;
   }
 
   .catalog__film-svg-title {
