@@ -61,15 +61,6 @@
   font-size: 15px;
 }
 
-.map {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.write-us__wrapper {
-  padding: 0 30px;
-}
-
 .write-us {
   margin-top: 30px;
   font-size: 17px;
@@ -141,10 +132,6 @@
     width: 230px;
   }
 
-  .write-us__wrapper--tablet {
-    margin-top: 63px;
-  }
-
   .write-us--size {
     width: 230px;
     margin: 0 auto;
@@ -196,19 +183,9 @@
     line-height: 40px;
   }
 
-  .map {
-    width: 525px;
-    height: 460px;
-    float: right;
-    margin-right: 100px;
-    margin-top: 75px;
-  }
 
-  .write-us__wrapper {
-    margin-top: 115px;
-  }
 
-  .write-us {
+  /*.write-us {
     margin-left: 242px;
-  }
+  }*/
 }
