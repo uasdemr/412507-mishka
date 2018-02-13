@@ -2,13 +2,13 @@
   position: relative;
 }
 
-.menu__toggle-menu {
+.menu__toggle {
   width: 30px;
   height: 24px;
   border: none;
   position: absolute;
   right: 26px;
-  top: 27px;
+  top: 29px;
   padding: 0;
   background-color: #ffffff;
   z-index: 1;
@@ -19,7 +19,30 @@
   }
 }
 
-.menu--closed .menu__toggle-menu::before {
+
+.menu__toggle::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #231f20;
+  //transform: rotate(45deg);
+}
+
+/*.menu__toggle::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #231f20;
+  //transform: rotate(-45deg);
+}*/
+
+.menu--closed .menu__toggle::before {
   content: "";
 
   position: absolute;
@@ -30,15 +53,23 @@
   height: 2px;
 
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
-.menu--closed .main-nav__toggle:active::before {
+.menu--closed .menu__toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
 
-.menu--opened .menu__toggle-menu {
+.menu--closed .menu__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.menu--opened .menu__toggle {
   //top: 3px;
   //right: 5px;
   //left: 5px;
@@ -72,35 +103,26 @@
   }
 }
 
-
-/*.menu__toggle-menu::before {
-      content: "";
-    position: absolute;
-    right: 0;
-    top: 10px;
-    width: 30px;
-    height: 2px;
-    background-color: #231f20;
-    transform: rotate(45deg);
-}
-
-.menu__toggle-menu::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 10px;
-    width: 30px;
-    height: 2px;
-    background-color: #231f20;
-    transform: rotate(-45deg);
-}*/
-
 @media (min-width: 768px) {
   .main-header {
     //padding: 0 50px;
+    width: 768px;
+    margin: 0 auto;
   }
 
-  .menu__toggle-menu {
+  .menu__toggle {
+    display: none;
+  }
+
+  .menu--closed .menu__item {
+    display: block;
+  }
+
+  .menu--closed .menu__item--news {
+    display: none;
+  }
+
+  .menu--closed .menu__item--sale {
     display: none;
   }
 }
@@ -108,5 +130,6 @@
 @media (min-width: 1250px) {
   .main-header {
     //padding: 0 100px;
+    width: 1250px;
   }
 }

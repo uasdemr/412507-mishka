@@ -1,7 +1,7 @@
 .site-wrapper {
   background-color: $main-color;
-  width: $main-width;
-  margin: 0 auto;
+  //width: $main-width;
+  //margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@
 
 @media (min-width: 768px) {
   .site-wrapper {
-    width: 768px;
+    width: 100%;
   }
 
   .site__write--wrapper {
@@ -21,7 +21,7 @@
 
 @media (min-width: 1250px) {
   .site-wrapper {
-    width: 1250px;
+    width: 100%;
   }
 
   .site__write--wrapper {
