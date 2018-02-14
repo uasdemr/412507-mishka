@@ -118,7 +118,7 @@
     background-repeat: no-repeat;
     background-size: 350px 450px;
     background-position: 0 640px;
-    padding: 0 50px;
+    padding: 0;
   }
 
   .about__link {
@@ -135,9 +135,13 @@
   }
 
   .about__list {
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
+    padding-left: 52px;
   }
 
   .about__item {
@@ -175,11 +179,20 @@
     order: 5;
   }
 
+  .about__title-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 46px;
+    padding-top: 50px;
+  }
+
   .about__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 50px;
+    letter-spacing: -0.3px;
     display: inline-block;
+    //margin-left: 50px;
+    margin: 0 auto;
   }
 
   .about__td {

@@ -206,6 +206,100 @@
   }
 }
 */
-.featured {
+@media(min-width: 768px) {
+  .featured {
+    width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/triple-set-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 385px 160px;
+    background-size: 330px 403px;
+  }
+
+  .featured__title {
+    margin: 0;
+    margin-top: 51px;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featured__span {
+    display: inline-block;
+    width: 70px;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #63d1bb;
+    text-transform: uppercase;
+    padding-right: 28px;
+    padding-top: 3px;
+    letter-spacing: 0;
+  }
+
+  .featured__text {
+    width: 300px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+
+  .featured__table {
+    margin-top: 42px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .featured__row {
+    vertical-align: baseline;
+  }
+
+  .featured__description {
+    padding-top: 3px;
+    padding-bottom: 17px;
+  }
+
+  .featured__item {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+  }
+
+  .featured__price {
+    margin: 0;
+    margin-top: 50px;
+    width: 290px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .featured__to-order {
+  margin-top: 34px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #444444;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  width: 287px;
+  text-align: center;
+  padding: 14px 0;
+}
 
 }
