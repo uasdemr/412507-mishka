@@ -1,6 +1,5 @@
 .map {
   margin-top: 37px;
-  text-align: center;
 }
 
 .map__iframe {
@@ -9,6 +8,11 @@
   border: none;
 }
 
+@media (min-width: 768px) {
+  .map {
+    margin-top: 57px;
+  }
+}
 
 @media (min-width: 1250px) {
   .map {

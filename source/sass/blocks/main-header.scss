@@ -1,6 +1,19 @@
-.main-header {
+.header {
   position: relative;
+  //background-color: rgba(255, 255, 255, 0.5);
+  //background-color: #e7e7e7;
 }
+
+/*.header:after {
+  content: "";
+  position: absolute;
+  top: 88px;
+  width: 100%;
+  height: 77px;
+  background-color: rgba(255,111,255, 0.1);
+  //background-color: #f9f9f9;
+  //border-bottom: 1px solid #e7e7e7;
+}*/
 
 .menu__toggle {
   width: 30px;
@@ -99,16 +112,45 @@
 
   &:active::before,
   &:active::after {
-    //background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (min-width: 768px) {
-  .main-header {
+  .header {
     //padding: 0 50px;
-    width: 768px;
-    margin: 0 auto;
+    //width: 768px;
+    //margin: 0 auto;
+    background-color: #fafafa;
   }
+
+ /* .header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 83px;
+  background-color: #e7e7e7;
+}*/
+
+  .header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  /*.header:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    background-color: #e7e7e7;
+    //z-index: -1;
+    //border-bottom: 1px solid #e7e7e7;
+  }*/
 
   .menu__toggle {
     display: none;
@@ -128,8 +170,20 @@
 }
 
 @media (min-width: 1250px) {
-  .main-header {
+  .header {
     //padding: 0 100px;
-    width: 1250px;
+    //width: 1250px;
+    position: relative;
   }
+
+  .menu--closed .menu__item--news {
+    display: block;
+  }
+
+  .menu--closed .menu__item--sale {
+    display: block;
+  }
+
+
+
 }
