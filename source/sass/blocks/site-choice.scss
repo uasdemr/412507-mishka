@@ -150,6 +150,7 @@
 
   .site-choice {
     width: 768px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -194,6 +195,7 @@
 @media (min-width: 1250px) {
   .site-choice {
     width: 1250px;
+    margin: 0 auto;
     margin-top: -5px;
     background-image: url(../../img/zigzag-fill-desktop.png);
     display: flex;
@@ -202,6 +204,7 @@
 
   .site-choice__item {
     width: 525px;
+    flex-grow: 1px;
   }
 
   .site-choice__interior {
@@ -234,18 +237,22 @@
   }
 
   .site-choice__link--interior {
-    padding-right: 0;
+    padding-right: 36px;
     padding-left: 37px;
     padding-top: 8px;
-    padding-bottom: 0;
+    padding-bottom: 25px;
     width: 250px;
-    //padding-top: 28px;
+    padding-top: 23px;
   }
   .site-choice__link--toys {
-    padding-right: 0;
+    padding-right: 36px;
     padding-left: 37px;
-    padding-top: 8px;
-    padding-bottom: 0;
+    padding-top: 23px;
+    padding-bottom: 25px;
     width: 220px;
+  }
+
+  .site-choice__svg {
+    padding-top: 5px;
   }
 }

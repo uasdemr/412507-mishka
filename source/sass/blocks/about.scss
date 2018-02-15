@@ -47,7 +47,7 @@
 .about__svg {
   //position: absolute;
   //top: 10px;
-  width: 40px;
+  width: 50px;
   margin-top: 10px;
   //height: 40px;
   //background-color: #fffccc;
@@ -353,24 +353,150 @@
 
 @media (min-width: 1250px) {
   .about {
-    padding: 0 100px;
-    background-position: 100px 655px;
+    //padding: 0 100px;
+    //background-position: 100px 655px;
     margin-top: 32px;
   }
 
+  .about-comments {
+    width: 1250px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    background-position: 100px 32px;
+    background-size: 350px 458px;
+  }
+
+  .about__title-wrapper {
+    width: 1250px;
+    padding-top: 83px;
+
+    box-sizing: border-box;
+  }
+
+  .about__title-wrapper--review {
+    padding-top: 101px;
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+
   .about__list {
-    margin-left: 180px;
+    //width: 1250px;
+    width: 950px;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    //padding-left: 150px;
+    //padding-right: 150px;
+  }
+
+  .about__item {
+    box-sizing: border-box;
+    width: 350px;
+  }
+
+  .about__list--arrows {
+    padding: 0;
+    padding-right: 70px;
+    padding-top: 20px;
+    flex-direction: row;
+    width: 205px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .about__item--prev {
+    width: 50px;
+  }
+
+  .about__item--next {
+    width: 50px;
+  }
+
+  .about__title--about {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 218px;
+  }
+
+  .about__title--review {
+    margin-left: 123px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__to-write {
+    margin-top: 10px;
+  }
+
+  .about__comment {
+    width: 800px;
+    margin-left: 225px;
+  }
+
+  .about__comment-wrapper {
+    margin: 0 auto;
+    margin-top: 34px;
+    padding-left: 225px;
+    letter-spacing: 0.3px;
+    box-sizing: border-box;
+  }
+
+  .about__span {
+    letter-spacing: 0.2px;
+  }
+  /*
+
+
+
+
+
+  .about__to-write {
+    margin-top: 10px;
+    margin-right: 150px;
+  }
+
+
+
+  .about__svg {
+    text-align: unset;
+  }
+
+  .about__svg--eco {
+    padding-left: 17px;
+  }
+
+  .about__svg--scandinavian {
+    padding-left: 9px;
+  }
+
+
+  .about__svg--like {
+    padding-left: 18px;
+  }
+
+  .about__link {
+    margin-left: 0;
+    padding-top: 13px;
+    padding-bottom: 0;
+  }
+
+  .about__text {
+    padding-top: 0;
+    width: 260px;
+  }
+
+  .about__text--eco {
+    width: 230px;
+  }
+
+  .about-comments {
+    width: 1250px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 175px;
-  }
-
-  .about__text {
-    width: 780px;
-    margin-left: 175px;
+    margin-left: 223px;
   }
 
   .about__name {
@@ -380,5 +506,5 @@
 
   .about__table {
     //margin-top: 44px;
-  }
+  }*/
 }

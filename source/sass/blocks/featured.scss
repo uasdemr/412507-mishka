@@ -263,17 +263,16 @@
   }
 
   .featured__row {
-    vertical-align: baseline;
+    //vertical-align: baseline;
   }
 
   .featured__description {
-    padding-top: 3px;
     padding-bottom: 17px;
   }
 
   .featured__item {
-    padding-top: 3px;
-    padding-bottom: 10px;
+    //padding-top: 3px;
+    //padding-bottom: 10px;
     padding-left: 28px;
   }
 
@@ -288,18 +287,105 @@
   }
 
   .featured__to-order {
-  margin-top: 34px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #444444;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid #444444;
-  width: 287px;
-  text-align: center;
-  padding: 14px 0;
+    margin-top: 34px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #444444;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #444444;
+    width: 287px;
+    text-align: center;
+    padding: 14px 0;
+  }
 }
 
+@media(min-width: 1250px) {
+  .featured {
+    width: 1250px;
+    margin: 0 auto;
+    //box-sizing: border-box;
+    padding: 0 100px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/triple-set-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 625px 75px;
+    background-size: 525px 635px;
+  }
+
+  .featured__title {
+    margin: 0;
+    //margin-top: 127px;
+    padding-top: 127px;
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    display: flex;
+    flex-direction: row-reverse;
+    //justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    //padding-left: 48px;
+  }
+
+  .featured__span {
+    padding-left: 48px;
+    padding-right: 0;
+  }
+
+  .featured__span-block {
+    padding-left: 54px;
+    letter-spacing: -2.4px;
+  }
+
+  .featured__text {
+    width: 300px;
+    margin: 0;
+    margin-top: 48px;
+    margin-left: 175px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+
+  .featured__table {
+    width: 290px;
+    margin-top: 47px;
+    margin-left: 176px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .featured__row {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .featured__description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .featured__item {
+    //padding-left: 30px;
+    padding-left: 0;
+    padding-bottom: 1px;
+
+    &--color {
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .featured__price {
+    margin-top: 108px;
+    margin-left: 176px;
+  }
+
+  .featured__to-order {
+    margin-left: 176px;
+  }
 }
