@@ -1,15 +1,24 @@
-/*.featured {
-  margin-top: 25px;
+.featured {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 22px;
   padding: 0 30px;
   padding-bottom: 40px;
   border-bottom: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  background-image: url("../../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 30px 320px;
+  //background-size: 330px 403px;
 }
 
 .featured__title {
   margin: 0;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: -1.5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured__span {
@@ -24,13 +33,36 @@
   line-height: 24px;
   color: #444444;
   font-weight: 400;
-  letter-spacing: -0.7px;
-  margin: 15px 0;
-  padding-right: 30px;
+  letter-spacing: 0.1px;
+  padding-top: 23px;
+  margin: 0;
+  //padding-right: 30px;
 }
 
 .featured__table {
+    margin-top: 19px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .featured__row {
+    //vertical-align: baseline;
+  }
+
+  .featured__description {
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+
+  .featured__item {
+    //padding-top: 3px;
+    //padding-bottom: 10px;
+    padding-left: 28px;
+  }
+
+/*.featured__table {
   width: 100%;
+  margin-top: 24px;
 }
 
 .featured__col {
@@ -42,13 +74,14 @@
 .featured__col:nth-child(2n) {
   padding-left: 20px;
 }
-
+*/
 .featured__basket-image {
   margin-top: 25px;
 }
 
 .featured__price {
   margin: 18px 0;
+  margin-top: 370px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -66,11 +99,11 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #444444;
-  width: 100%;
+  width: 254px;
   text-align: center;
   padding: 14px 0;
 }
-
+/*
 @media (min-width: 768px) {
   .featured {
     margin-top: 57px;
@@ -253,11 +286,11 @@
     margin: 0;
     font-size: 17px;
     line-height: 30px;
-    margin-top: 50px;
+    margin-top: 26px;
   }
 
   .featured__table {
-    margin-top: 42px;
+    margin-top: 33px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -278,7 +311,7 @@
 
   .featured__price {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 45px;
     width: 290px;
     text-align: center;
     font-size: 20px;
@@ -346,7 +379,7 @@
   .featured__text {
     width: 300px;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 25px;
     margin-left: 175px;
     font-size: 17px;
     line-height: 30px;
