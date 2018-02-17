@@ -1,19 +1,6 @@
 .header {
   position: relative;
-  //background-color: rgba(255, 255, 255, 0.5);
-  //background-color: #e7e7e7;
 }
-
-/*.header:after {
-  content: "";
-  position: absolute;
-  top: 88px;
-  width: 100%;
-  height: 77px;
-  background-color: rgba(255,111,255, 0.1);
-  //background-color: #f9f9f9;
-  //border-bottom: 1px solid #e7e7e7;
-}*/
 
 .menu__toggle {
   width: 30px;
@@ -41,20 +28,7 @@
   width: 30px;
   height: 2px;
   background-color: #231f20;
-  //transform: rotate(45deg);
 }
-
-/*.menu__toggle::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 10px;
-  width: 30px;
-  height: 2px;
-  background-color: #231f20;
-  //transform: rotate(-45deg);
-}*/
-
 .menu--closed .menu__toggle::before {
   content: "";
 
@@ -83,9 +57,6 @@
 }
 
 .menu--opened .menu__toggle {
-  //top: 3px;
-  //right: 5px;
-  //left: 5px;
 
   &::before,
   &::after {
@@ -118,19 +89,15 @@
 
 @media (min-width: 768px) {
   .header {
-    //padding: 0 50px;
-    //width: 768px;
-    //margin: 0 auto;
     background-color: #fafafa;
   }
 
-  .header:before {
+  .header::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 88px;
     background-color: #ffffff;
-    //border-bottom: 1px solid #e7e7e7;
   }
 
   .menu__toggle {
@@ -155,7 +122,7 @@
     position: relative;
   }
 
-  .header:before {
+  .header::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -170,7 +137,4 @@
   .menu--closed .menu__item--sale {
     display: block;
   }
-
-
-
 }

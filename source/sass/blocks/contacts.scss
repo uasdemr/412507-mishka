@@ -8,12 +8,6 @@
   padding: 0 30px;
 }
 
-.write-us {
-  position: absolute;
-  top: 517px;
-  width: 255px;
-}
-
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
@@ -75,6 +69,9 @@
   border: 2px solid #444444;
   text-align: center;
   padding: 14px 0;
+  position: absolute;
+  top: 517px;
+  width: 255px;
 }
 
 @media (min-width: 768px) {
@@ -223,6 +220,7 @@
 
   .contacts__item--address {
     padding-right: 0;
+    padding-top: 30px;
   }
 
   .contacts__text {
@@ -232,11 +230,6 @@
   .contacts__item--email {
     padding-top: 37px;
   }
-
-  .contacts__item--address {
-    padding-top: 30px;
-  }
-
   .contacts__address {
     padding-left: 0;
   }

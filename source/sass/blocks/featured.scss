@@ -9,7 +9,6 @@
   background-image: url("../../img/triple-set-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 30px 320px;
-  //background-size: 330px 403px;
 }
 
 .featured__title {
@@ -36,45 +35,23 @@
   letter-spacing: 0.1px;
   padding-top: 23px;
   margin: 0;
-  //padding-right: 30px;
 }
 
 .featured__table {
-    margin-top: 19px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .featured__row {
-    //vertical-align: baseline;
-  }
-
-  .featured__description {
-    padding-top: 8px;
-    padding-bottom: 11px;
-  }
-
-  .featured__item {
-    //padding-top: 3px;
-    //padding-bottom: 10px;
-    padding-left: 28px;
-  }
-
-/*.featured__table {
-  width: 100%;
-  margin-top: 24px;
+  margin-top: 19px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
-.featured__col {
-  padding: 10px 0;
-  border-bottom: 1px solid #ececec;
-  letter-spacing: -1px;
+.featured__description {
+  padding-top: 8px;
+  padding-bottom: 11px;
 }
 
-.featured__col:nth-child(2n) {
-  padding-left: 20px;
+.featured__item {
+  padding-left: 28px;
 }
-*/
+
 .featured__basket-image {
   margin-top: 25px;
 }
@@ -103,142 +80,7 @@
   text-align: center;
   padding: 14px 0;
 }
-/*
-@media (min-width: 768px) {
-  .featured {
-    margin-top: 57px;
-    padding: 0 50px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #f1f1f1;
-    position: relative;
-  }
 
-  .featured__title {
-    margin: 0;
-    font-size: 43px;
-    line-height: 50px;
-    letter-spacing: -1.5px;
-    box-sizing: border-box;
-  }
-
-  .featured__span {
-    display: inline-block;
-    width: 70px;
-    margin-left: 130px;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .featured__text {
-    width: 280px;
-    line-height: 29px;
-    margin-top: 50px;
-    letter-spacing: 1px;
-  }
-
-  .featured__table {
-    width: 300px;
-    margin-top: 35px;
-  }
-
-  .featured__col:nth-child(2n) {
-    padding-left: 0;
-  }
-
-  .featured__basket-image {
-    position: absolute;
-    width: 333px;
-    height: 404px;
-    margin: 0;
-    top: 105px;
-    right: 50px;
-  }
-
-  .featured__price {
-    width: 300px;
-    font-size: 20px;
-    margin: 0;
-    margin-top: 50px;
-  }
-
-  .featured__to-order {
-    width: 287px;
-    margin-top: 33px;
-  }
-}
-
-@media (min-width: 1250px) {
-  .featured {
-    //margin-top: 67px;
-    width: 1250px;
-    margin-top: 0;
-    margin: 0 auto;
-    padding: 0 100px;
-
-    padding-bottom: 70px;
-    padding-top: 67px;
-    box-sizing: border-box;
-    background-image: url(../../img/triple-set-desktop.jpg);
-    background-position: 625px 0;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: middle;
-  }
-
-  .featured__title {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 53px;
-    line-height: 57px;
-    padding: 0 50px;
-    padding-top: 70px;
-    letter-spacing: -2.3px;
-    z-index: 1;
-  }
-
-  .featured__span-block {
-    margin-left: 50px;
-  }
-
-  .featured--order {
-    order: -1;
-  }
-
-  .featured__span {
-    margin-left: 0;
-  }
-
-  .featured__text {
-    margin-left: 175px;
-  }
-
-  .featured__table {
-    margin-left: 175px;
-    margin-top: 45px;
-  }
-
-  .featured__price {
-    width: 600px;
-    margin-top: 105px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-  }
-
-  .featured__to-order {
-    margin-left: 175px;
-    margin-top: 15px;
-  }
-
-  .featured__basket-image {
-    width: 520px;
-    height: 635px;
-    top: 18px;
-    right: 100px;
-  }
-}
-*/
 @media(min-width: 768px) {
   .featured {
     width: 768px;
@@ -295,17 +137,11 @@
     line-height: 20px;
   }
 
-  .featured__row {
-    //vertical-align: baseline;
-  }
-
   .featured__description {
     padding-bottom: 17px;
   }
 
   .featured__item {
-    //padding-top: 3px;
-    //padding-bottom: 10px;
     padding-left: 28px;
   }
 
@@ -339,7 +175,6 @@
   .featured {
     width: 1250px;
     margin: 0 auto;
-    //box-sizing: border-box;
     padding: 0 100px;
     padding-bottom: 40px;
     display: flex;
@@ -352,7 +187,6 @@
 
   .featured__title {
     margin: 0;
-    //margin-top: 127px;
     padding-top: 127px;
     font-size: 53px;
     line-height: 57px;
@@ -360,10 +194,8 @@
     letter-spacing: -2px;
     display: flex;
     flex-direction: row-reverse;
-    //justify-content: space-between;
     justify-content: flex-end;
     align-items: center;
-    //padding-left: 48px;
   }
 
   .featured__span {
@@ -404,7 +236,6 @@
   }
 
   .featured__item {
-    //padding-left: 30px;
     padding-left: 0;
     padding-bottom: 1px;
 
