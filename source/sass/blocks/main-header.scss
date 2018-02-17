@@ -19,7 +19,6 @@
   }
 }
 
-
 .menu__toggle::before {
   content: "";
   position: absolute;
@@ -29,6 +28,7 @@
   height: 2px;
   background-color: #231f20;
 }
+
 .menu--closed .menu__toggle::before {
   content: "";
 
@@ -57,18 +57,14 @@
 }
 
 .menu--opened .menu__toggle {
-
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     right: 0;
     top: 10px;
-
     width: 30px;
     height: 2px;
-
     background-color: #000000;
   }
 
