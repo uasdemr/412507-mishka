@@ -17,11 +17,16 @@
   margin-top: 30px;
 }
 
+
 .catalog__image {
-  margin: 0 auto;
-  width: 260px;
-  height: 195px;
-  background-color: #ecebe9;
+  //margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  //background-color: #ecebe9;
+}
+
+.catalog__picture {
+  //background-color: #e7e6e4;
 }
 
 .catalog-wrapper {
@@ -35,7 +40,7 @@
   justify-content: space-around;
 }
 
-.catalog__hare {
+/*.catalog__hare {
   background-image: url("../../img/photo-hare-mobile@1x.jpg");
 }
 
@@ -45,7 +50,7 @@
 
 .catalog__big-basket {
   background-image: url("../../img/photo-toys-mobile@1x.jpg");
-}
+}*/
 
 .catalog__title {
   margin: 0;
@@ -208,11 +213,16 @@
 
   .catalog__item {
     //width: 670px;
-    min-height: 335px;
+    min-height: 334px;
     display: flex;
     margin-top: 52px;
     padding-bottom: 0;
     box-sizing: border-box;
+  }
+
+  .catalog__picture {
+    display: flex;
+    align-items: stretch;
   }
 
   .catalog-wrapper {
@@ -234,7 +244,7 @@
 
   .catalog__image {
     width: 334px;
-    height: 335px;
+    //height: 335px;
     margin: 0;
   }
 
@@ -268,7 +278,7 @@
     flex-direction: row;
   }
 
-  .catalog__hare {
+  /*.catalog__hare {
     background-image: url("../../img/photo-1-tablet.jpg");
   }
 
@@ -279,7 +289,7 @@
   .catalog__big-basket {
     background-image: url("../../img/photo-3-tablet.jpg");
   }
-
+*/
   .catalog__movies {
     width: 668px;
     min-height: 455px;
@@ -326,16 +336,16 @@
 
   .catalog__image {
     width: 315px;
-    min-height: 462px;
-    background-repeat: no-repeat;
-    background-position: 0 35px;
-    background-size: 315px 380px;
+    //min-height: 462px;
+    //background-repeat: no-repeat;
+    //background-position: 0 35px;
+    //background-size: 315px 380px;
   }
 
   .catalog__description {
     padding-left: 0;
   }
-
+/*
   .catalog__hare {
     background-position: -41px 30px;
     background-size: 385px 390px;
@@ -349,7 +359,7 @@
   .catalog__big-basket {
     background-position: -13px 0;
     background-size: 435px 430px;
-  }
+  }*/
 
   .catalog__films-wrapper {
     padding-top: 54px;
