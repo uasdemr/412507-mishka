@@ -229,7 +229,9 @@ input[type="radio"]:checked + .indicator {
   .form__item--text {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 90px;
+    margin-top: 154px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 
   .form__item--type {
@@ -424,10 +426,14 @@ input[type="radio"]:checked + .indicator {
 }
 
 @media (min-width: 1250px) {
+  .form {
+    padding-bottom: 50px;
+  }
+
   .form__item--text {
     padding-left: 225px;
     padding-right: 325px;
-    margin-top: 145px;
+    margin-top: 128px;
   }
 
   .form__item--type {
