@@ -40,18 +40,6 @@
   justify-content: space-around;
 }
 
-/*.catalog__hare {
-  background-image: url("../../img/photo-hare-mobile@1x.jpg");
-}
-
-.catalog__basket {
-  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
-}
-
-.catalog__big-basket {
-  background-image: url("../../img/photo-toys-mobile@1x.jpg");
-}*/
-
 .catalog__title {
   margin: 0;
   font-size: 17px;
@@ -72,8 +60,6 @@
 }
 
 .catalog__price-wrapper {
-  //padding-top: 40px;
-  //padding-bottom: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,26 +74,22 @@
 }
 
 .catalog__films {
-  min-height: 503px;
+  //min-height: 503px;
   margin-top: 36px;
   border: 1px solid #ececec;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 14px;
 }
 
-.catalog__movies {
-  //padding-top: 20px;
+.catalog__film-picture {
   position: relative;
-  width: 260px;
-  height: 150px;
-  background-image: url("../../img/video-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: stretch;
 }
 
-.catalog__movies,
 .catalog__description {
   border: none;
 }
@@ -118,7 +100,6 @@
   left: 30%;
   width: 100px;
   height: 76px;
-  background-image: url("../../img/icon-play.svg");
 }
 
 .catalog__text {
@@ -148,10 +129,8 @@
 .catalog__film-svg-title {
   display: flex;
   flex-direction: row;
-  //justify-content: space-around;
   width: 260px;
   align-items: center;
-  //margin-left: 33px;
 
   &--order {
     order: -1;
@@ -159,7 +138,7 @@
 }
 
 .catalog__film-svg-icon {
-  padding-left: 34px;
+  //padding-left: 34px;
 }
 
 .catalog__title--film {
@@ -188,10 +167,8 @@
   }
 
   .catalog__films {
-    flex-direction: column;
     align-items: center;
     margin-top: 47px;
-    //display: block;
   }
 
   .catalog__price {
@@ -208,11 +185,9 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #cfcfcf;
-    //width: 280px;
   }
 
   .catalog__item {
-    //width: 670px;
     min-height: 334px;
     display: flex;
     margin-top: 52px;
@@ -223,6 +198,11 @@
   .catalog__picture {
     display: flex;
     align-items: stretch;
+  }
+
+  .catalog__film-image {
+    width: 668px;
+    height: auto;
   }
 
   .catalog-wrapper {
@@ -244,7 +224,6 @@
 
   .catalog__image {
     width: 334px;
-    //height: 335px;
     margin: 0;
   }
 
@@ -252,9 +231,6 @@
     width: 584px;
     order: 0;
     padding-top: 34px;
-    /*.catalog__title--width {
-      width: 270px;
-    }*/
   }
 
   .catalog__text {
@@ -268,32 +244,6 @@
     padding: 0;
     padding-top: 31px;
     letter-spacing: 0;
-  }
-
-  .catalog__film-svg-icon {
-    padding-left: 3px;
-  }
-
-  .catalog__films-description {
-    flex-direction: row;
-  }
-
-  /*.catalog__hare {
-    background-image: url("../../img/photo-1-tablet.jpg");
-  }
-
-  .catalog__basket {
-    background-image: url("../../img/photo-2-tablet.jpg");
-  }
-
-  .catalog__big-basket {
-    background-image: url("../../img/photo-3-tablet.jpg");
-  }
-*/
-  .catalog__movies {
-    width: 668px;
-    min-height: 455px;
-    background-image: url("../../img/video-tablet.jpg");
   }
 
   .catalog__movie-play {
@@ -316,7 +266,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 125px;
-    //padding: 0 50px;
     box-sizing: border-box;
   }
 
@@ -324,7 +273,6 @@
     flex-direction: column;
     width: 315px;
     min-height: 660px;
-    //margin-left: 15px;
     margin-top: 0;
   }
 
@@ -342,17 +290,24 @@
     padding-left: 0;
   }
 
-  .catalog__films-wrapper {
-    padding-top: 54px;
+  .catalog__films {
+    width: 1050px;
+    height: 455px;
+    //min-height: 455px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    padding-bottom: 0;
+    margin-top: 55px;
   }
 
-  .catalog__films {
-    min-height: 457px;
-    //margin-top: 55px;
-    width: 1050px;
-    display: block;
-    margin-top: 0;
-    //padding-top: 50px;
+  .catalog__film-picture {
+    order: 0;
+  }
+
+  .catalog__film-image {
+    width: 100%;
+    height: auto;
   }
 
   .catalog__price-wrapper {
@@ -369,52 +324,48 @@
   }
 
   .catalog__to-order {
-    margin-left: 83px;
+    margin: 0 auto;
     margin-top: 46px;
-    width: 225px;
+    margin-left: 26px;
+    width: 226px;
+    order: 3;
   }
 
   .catalog__film-svg-title {
-    width: 200px;
+    width: 260px;
     padding: 0;
-    position: relative;
-    padding-left: 80px;
-    margin-top: 95px;
+    margin: 0 auto;
+    margin-top: 40px;
+    //margin-left: 70px;
+    order: 1;
+    flex-direction: column;
+    align-items: flex-start;
 
-    .catalog__title {
-      font-size: 20px;
-      line-height: 24px;
-      padding: 0;
-    }
+    /*.catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+  }*/
   }
 
-  .catalog__film-svg-icon {
-    position: absolute;
-    top: -55px;
+  .catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+    //padding: 0;
+  }
+
+  .catalog__title--film {
+    width: 170px;
+    padding-top: 20px;
+    padding-left: 0;
   }
 
   .catalog__text--film {
-    width: 255px;
-    float: left;
-    padding-top: 33px;
-    padding-left: 80px;
+    width: 260px;
+    margin: 0 auto;
     font-size: 15px;
     line-height: 30px;
-  }
-
-  .catalog__films-description {
-    width: 365px;
-  }
-
-  .catalog__movies {
-    width: 680px;
-    min-height: 455px;
-    background-image: url("../../img/video-desktop.jpg");
-    background-position: -50px -20px;
-    background-size: 740px 480px;
-    //margin-left: 50px;
-    float: left;
-    margin: 0;
+    order: 2;
   }
 
   .catalog__movie-play {
